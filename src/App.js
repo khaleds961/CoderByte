@@ -27,6 +27,12 @@ function App() {
     title: 'MySql',
     content: 'MySQL Cluster enables users to meet the database challenges of next generation web, cloud, and communications services with uncompromising scalability'
   },
+  {
+    id: 5,
+    date: 'Jan 16,2024',
+    title: 'Difference between library and framework',
+    content: 'Frameworks provide a more comprehensive set of functionality and often include a wide variety of pre-built components. Libraries tend to be more specialized and provide a specific set of functions or tools.'
+  }
   ];
 
   const [searchQuery, setSearchQuery] = useState('');
@@ -47,7 +53,7 @@ function App() {
       ? (<span key={index} style={{ backgroundColor: 'yellow' }}>{part}</span>) : part);
   }
   return (
-    <div style={{ backgroundColor: '#F5F5F5',height:'100vw' }}>
+    <div style={{ backgroundColor: '#F5F5F5', height: '100vw' }}>
       <div className='article-container'>
         <h1 style={{ textAlign: 'center' }}>Search</h1>
         <ul>
